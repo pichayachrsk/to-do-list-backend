@@ -10,7 +10,10 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "express": "^5.1.0"
+    "class-validator": "^0.14.2",
+    "express": "^5.1.0",
+    "http-errors": "^2.0.0",
+    "http-status-codes": "^2.3.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.28.0",
