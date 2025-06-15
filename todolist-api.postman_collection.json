@@ -1,7 +1,7 @@
 {
 	"info": {
 		"_postman_id": "7c0acd6c-335d-40ce-883f-3c851911cc24",
-		"name": "New Collection",
+		"name": "todolist-api",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "14422673"
 	},
@@ -30,6 +30,15 @@
 			"request": {
 				"method": "POST",
 				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Do test\",\r\n    \"completed\": false\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
 				"url": {
 					"raw": "localhost:3000/to-do-list/add-item",
 					"host": [
@@ -49,8 +58,17 @@
 			"request": {
 				"method": "PUT",
 				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Do it after\",\r\n    \"completed\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
 				"url": {
-					"raw": "localhost:3000/to-do-list/update-item/1",
+					"raw": "localhost:3000/to-do-list/update-item/5",
 					"host": [
 						"localhost"
 					],
@@ -58,7 +76,7 @@
 					"path": [
 						"to-do-list",
 						"update-item",
-						"1"
+						"5"
 					]
 				}
 			},
@@ -71,7 +89,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"title\": \"Do something Edit 1\",\r\n    \"completed\": true\r\n}",
+					"raw": "{\r\n    \"title\": \"five\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -79,7 +97,7 @@
 					}
 				},
 				"url": {
-					"raw": "localhost:3000/to-do-list/toggle-item/1",
+					"raw": "localhost:3000/to-do-list/toggle-item/5",
 					"host": [
 						"localhost"
 					],
@@ -87,7 +105,7 @@
 					"path": [
 						"to-do-list",
 						"toggle-item",
-						"1"
+						"5"
 					]
 				}
 			},
@@ -99,7 +117,7 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "localhost:3000/to-do-list/delete-item/1",
+					"raw": "localhost:3000/to-do-list/delete-item/5",
 					"host": [
 						"localhost"
 					],
@@ -107,7 +125,7 @@
 					"path": [
 						"to-do-list",
 						"delete-item",
-						"1"
+						"5"
 					]
 				}
 			},
