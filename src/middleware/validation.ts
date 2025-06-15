@@ -15,7 +15,6 @@ export const addOrUpdateItemValidation = () => {
       await validateOrReject(item);
       next();
     } catch (error: unknown) {
-        console.error(`Validation error: ${typeof error}`);
       const response = handleError(error);
       res.status(response.statusCode).json({
         message: response.message,
