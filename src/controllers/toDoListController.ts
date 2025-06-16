@@ -50,7 +50,7 @@ const updateItem = async (req: Request, res: Response) => {
   }
 };
 
-const UpdateItemField = async (req: Request, res: Response) => {
+const updateItemField = async (req: Request, res: Response) => {
   try {
     const data = <ToDoList>await fileHandlerUtil.readFile(dataPath);
     const itemId = parseInt(req.params.id);
@@ -96,6 +96,6 @@ export default {
   getList,
   addItem,
   updateItem,
-  UpdateItemField,
+  updateItemField,
   deleteItem,
 };
